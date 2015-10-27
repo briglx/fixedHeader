@@ -1,0 +1,93 @@
+/****************************************
+  Inherited Syles
+*****************************************/
+
+/*
+See this explanation for details
+https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*/
+
+html {
+    box-sizing: border-box;
+    color: #444;
+    font: 12pt 'Open Sans', Arial;
+    font-weight: normal;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    color: inherit;
+    font: inherit;
+}
+
+
+
+/****************************************
+  Defaults
+*****************************************/
+
+/**
+ * Basic styling
+ */
+
+body {
+
+    font-family: Helvetica, Arial, sans-serif;;
+    font-size: 15pt;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #333;
+    background-color: rgba(255,0,0,0.1);
+    -webkit-text-size-adjust: 100%;
+
+}
+
+
+.panel > div { 
+    margin: 0 auto; width: 1125px; 
+}
+
+
+/**
+ * Header
+ */
+
+.header {
+    top:0;
+    width: 100%;
+    position: fixed;
+}
+
+.header > div {
+    height: 100px;
+    background-color: rgba(0,255,0,0.1);    
+}
+
+/**
+ * Main
+ */
+
+.main {
+    
+    margin-top:100px;
+}
+
+.main > div {
+    height: 800px;
+    position: relative; /* For the .intro section */       
+    background-color: rgba(0,0,255,0.1);    
+}
+
+/**
+ * Footer
+ */
+
+.footer {
+    
+}
+
+.footer > div {
+    height: 100px;
+    position: relative; /* For the .intro section */       
+    background-color: rgba(127,127,0,0.1);    
+}
